@@ -5,12 +5,12 @@ const ServiceCard = () => {
         {
             image:"service/service1.png",
             title:"Cabinet Marketing ",
-            description:"We specialize in creating custom designs that cabinetry that combines functionally with timeless beauty . ",
+            description:"We specialize in creating custom designs that have a good  cabinetry that combines functionally with timeless beauty . ",
         },
          {
             image:"service/service2.png",
             title:"Custom Joinery ",
-            description:"Our team of expert artisans is dedicated to delivering the highest quality in every piece we create.",
+            description:"Our team of expert artisans is dedicated to delivering the good and highest  highest quality in every piece we create.",
         },
          {
             image:"service/service3.png",
@@ -26,7 +26,7 @@ const ServiceCard = () => {
          {
             image:"service/service5.png",
             title:"Hair Salons/Barber Shops ",
-            description:"Our team of professional stylists and barbers are dedicated to delivering precision and creativity in every haircut and styles.",
+            description:"Our team of professional stylists and  barbers are dedicated to delivering precision and creativity in every haircut and styles.",
         },
          {
             image:"service/service1.png",
