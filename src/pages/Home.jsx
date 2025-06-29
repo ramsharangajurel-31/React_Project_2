@@ -4,6 +4,8 @@ import QuoteForm from '../components/QuoteForm'
 import About from './About'
 import Service from './Service'
 import Testimonial from './Testimonial'
+import Contact from './Contact'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
@@ -13,6 +15,8 @@ const Home = () => {
       <About />
       <Service />
       <Testimonial />
+      <Contact />
+      <Footer />
     </div>
   )
 }

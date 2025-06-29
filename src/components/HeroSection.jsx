@@ -4,7 +4,10 @@ const HeroSection = () => {
     <div className ="hero-section">
         <img src = "hero.png" alt="hero"></img>
         <div className="hero-section-content">
-            <h1>Quality Over Quantity</h1>
+            <h1 style={{ color: 'white', fontSize: '48px', fontWeight: 'bold' }}>
+             Quality Over Quantity
+             </h1>
+
         </div>
       
     </div>

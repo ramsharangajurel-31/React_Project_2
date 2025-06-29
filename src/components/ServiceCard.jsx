@@ -49,6 +49,9 @@ const ServiceCard = () => {
         </div>
       ))}
     </div>
+     <div className="service-button">
+         <button className="service-button">VIEW ALL SERVICES</button>
+        </div>
     </div>
     </>
   );
