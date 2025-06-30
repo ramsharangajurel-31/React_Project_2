@@ -1,14 +1,16 @@
-/* General */
+
 body {
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+   font-family: Arial, sans-serif;
   margin: 0;
   box-sizing: border-box;
 }
 
-/* Top Header */
 .top-header {
-  background: black;
-  padding: 20px;
+  background-color: #2b1d1c;
+  padding: 5px 0;
+  color: white;
+ 
 }
 
 .top-head-icons ul {
@@ -16,11 +18,11 @@ body {
   gap: 15px;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .top-head-icons li {
   font-size: 20px;
-  list-style: none;
   color: white;
   cursor: pointer;
   transition: color 0.3s ease;
@@ -30,19 +32,65 @@ body {
   color: #007bff;
 }
 
-.tophead-call {
+.top-head-icons {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo img {
+  width: 100px;
+  height: 60px;
+  object-fit: contain;
+  background-color: #2b1d1c;
+  
+}
+
+.logo-main {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: white;
-  margin-left: 180px;
-  padding: 0;
+  margin-bottom: 0px;
+}
+
+.logo-sub {
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: white;
+}
+
+
+.tophead-call {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  color: white;
   cursor: pointer;
-  transition: color 1s ease;
+  transition: color 0.3s ease;
+}
+
+.tophead-call h5 {
+  margin: 0;
+  font-size: 16px;
 }
 
 .tophead-call h5:hover {
   color: #007bff;
 }
 
-/* Navbar */
+
+
 .navbar {
   background: whitesmoke;
   margin: 0;
@@ -73,7 +121,7 @@ body {
   color: red;
 }
 
-/* Hamburger Menu */
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -108,7 +156,7 @@ body {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Hero Section */
+
 .hero-section {
   position: relative;
   text-align: center;
@@ -131,7 +179,6 @@ body {
   padding: 0 1rem;
 }
 
-/* Quote Form */
 .quote-form {
   display: flex;
   padding: 20px;
@@ -171,7 +218,6 @@ body {
   background: darkred;
 }
 
-/* Cards Container */
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -214,7 +260,7 @@ body {
   margin: 0 auto 12px;
 }
 
-/* About Section */
+
 .about-section {
   position: relative;
 }
@@ -312,7 +358,7 @@ body {
   background-color: darkred;
 }
 
-/* Service Section */
+
 .service-head {
   text-align: center;
   background: url(service/service-background.png);
@@ -346,6 +392,7 @@ body {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  
 }
 
 .service-cardsection:hover {
@@ -404,7 +451,7 @@ body {
   transform: scale(1.05);
 }
 
-/* Testimonial */
+
 .testimonial {
   background-image: url('testimonial.png');
   background-size: cover;
@@ -487,8 +534,62 @@ body {
   font-weight: bold;
   color: white;
 }
+.project-section {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.project-section h2{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight:bold;
+}
+.project-section span{
+  color: red;
+}
 
-/* Contact */
+.project-images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  width: 100%;
+}
+
+.project-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  display: block;
+  border: none;
+}
+
+.project-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.project-button button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 16px;
+}
+
+.project-button button:hover {
+  background-color: #0d74d1;
+  transform: scale(1.05);
+}
+
 .contact-image {
   width: 100%;
   height: 90vh;
@@ -569,7 +670,7 @@ body {
   color: white;
 }
 
-/* Footer */
+
 .footer {
   background-color: #111;
   color: white;
@@ -583,6 +684,7 @@ body {
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
+  
 }
 
 .footer-box {
@@ -677,7 +779,6 @@ body {
   font-size: 16px;
 }
 
-/* --- Responsive Media Queries --- */
 
 @media (max-width: 1024px) {
   .navbar ul {
@@ -690,7 +791,33 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* Navbar adjustments */
+  @media (max-width: 768px) {
+
+  .top-header .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .top-head-icons {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .tophead-call {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .logo img {
+    width: 60px;
+    height: auto;
+  }
+}
+
+  
   .navbar ul {
     position: fixed;
     top: 60px;
@@ -720,7 +847,7 @@ body {
     display: flex;
   }
 
-  /* Hero Section */
+ 
   .hero-section img {
     height: auto;
     max-height: 60vh;
@@ -734,7 +861,8 @@ body {
     padding: 0 1rem;
   }
 
-  /* Quote Form */
+
+
   .quote-form {
     flex-direction: column;
     padding: 15px;
@@ -755,13 +883,13 @@ body {
     width: 100%;
   }
 
-  /* Cards */
+
   .cards-container {
     padding: 10px;
     margin: 0 0.5rem;
   }
 
-  /* About Section */
+
   .about-image img {
     height: auto;
     padding: 10px 10px;
@@ -785,7 +913,7 @@ body {
     padding: 10px 0;
   }
 
-  /* Service Section */
+
   .service-section {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     padding: 20px 10px;
@@ -798,7 +926,7 @@ body {
     max-width: 280px;
   }
 
-  /* Testimonials */
+ 
   .testimonial {
     min-height: auto;
     padding: 30px 10px;
@@ -814,7 +942,7 @@ body {
     font-size: 28px;
   }
 
-  /* Contact */
+
   .contact-image {
     flex-direction: column;
     height: auto;
@@ -832,7 +960,7 @@ body {
     height: auto;
   }
 
-  /* Footer */
+  
   .footer-sections {
     flex-direction: column;
     gap: 30px;
@@ -853,7 +981,7 @@ body {
 }
 
 @media (max-width: 480px) {
-  /* Reduce padding and font sizes on smallest screens */
+
   body {
     padding: 0 0.5rem;
   }

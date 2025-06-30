@@ -15,7 +15,7 @@ const Form = () => {
       <input type="email" id="email" name="email" required />
 
       <label htmlFor="message">MESSAGE</label>
-      <textarea id="message" name="message" rows="3" />
+      <textarea id="message" name="message" rows="5" />
 
       <button type="submit">Submit Now</button>
     </form>

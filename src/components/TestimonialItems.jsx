@@ -1,7 +1,7 @@
 import React from 'react';
 import { CgProfile } from "react-icons/cg";
 import useEmblaCarousel from 'embla-carousel-react';
-// import '../styles/testimonial.css'; // make sure CSS is loaded
+
 
 const TestimonialItems = () => {
   const [emblaRef] = useEmblaCarousel({ loop: true });

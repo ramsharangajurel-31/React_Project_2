@@ -18,8 +18,10 @@ const TopHeader = () => {
                 </ul>
                 </div>
             </div>
-            <div className='col-md-4'>
-
+            <div className='col-md-4 logo'>
+             <img src='logo.jpeg' alt="logo"/>
+             <span className="logo-main">CIARDI</span>
+             <span className="logo-sub">JOINERY</span>
             </div>
         
         <div className='col-md-4'>
